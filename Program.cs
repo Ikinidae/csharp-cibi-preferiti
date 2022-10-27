@@ -100,3 +100,48 @@
 
 // snack 4: Calcola la somma e la media dei numeri da 2 a 10.
 
+//int x = 0;
+//for (int i = 2; i < 11; i++)
+//{
+//    x += i;
+//    Console.WriteLine("questa è x: " + x);
+//}
+//Console.WriteLine("La somma dei valori è: " + x);
+//Console.WriteLine("La media dei valori è: " + x/9);
+
+//snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+//Console.WriteLine("inserisci un numero");
+//int x = Convert.ToInt32(Console.ReadLine());
+//if (x % 2 == 0)
+//{
+//    Console.WriteLine("Il numero inserito è pari: " + x);
+//}
+//else
+//{
+//    Console.WriteLine("Il numero inserito è dispari:" + x + ", il successivo numero pari è: " + (x+1));
+//}
+
+// snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] guests = { "Sandro", "Ika", "Simo", "Ale", "Gloria"};
+Console.WriteLine("inserisci il tuo nome");
+string nome = Console.ReadLine();
+bool invitato = false;
+
+for (int i = 0; i < guests.Length; i++)
+{
+    if (nome == guests[i])
+    {
+        invitato = true;
+    }
+}
+
+if (invitato == true)
+{
+    Console.WriteLine("Sei ammesso alla festa!");
+}
+else
+{
+    Console.WriteLine("Non sei ammesso alla festa!");
+}
