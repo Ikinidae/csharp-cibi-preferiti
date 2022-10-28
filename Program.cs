@@ -124,24 +124,60 @@
 
 // snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
-string[] guests = { "Sandro", "Ika", "Simo", "Ale", "Gloria"};
-Console.WriteLine("inserisci il tuo nome");
-string nome = Console.ReadLine();
-bool invitato = false;
+//string[] guests = { "Sandro", "Ika", "Simo", "Ale", "Gloria"};
+//Console.WriteLine("inserisci il tuo nome");
+//string nome = Console.ReadLine();
+//bool invitato = false;
 
-for (int i = 0; i < guests.Length; i++)
+//for (int i = 0; i < guests.Length; i++)
+//{
+//    if (nome == guests[i])
+//    {
+//        invitato = true;
+//    }
+//}
+
+//if (invitato == true)
+//{
+//    Console.WriteLine("Sei ammesso alla festa!");
+//}
+//else
+//{
+//    Console.WriteLine("Non sei ammesso alla festa!");
+//}
+
+//snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+//int[] odds = new int[6];
+
+//for (int i = 0; i < odds.Length; i++)
+//{
+//    Console.WriteLine("inserisci un numero");
+//    int input = Convert.ToInt32(Console.ReadLine());
+//    if (input % 2 != 0)
+//    {
+//        odds[i] = input;
+//    }
+//}
+
+//Console.WriteLine("il tuo array:");
+//for (int i = 0; i < odds.Length; i++)
+//{
+//    Console.WriteLine("Posizione" + i + ": " + odds[i]);
+//}
+
+
+// snack 8: Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+int[] numbers = { 3, 6, 4, 11, 7 };
+int sum = 0;
+
+for (int i = 0; i < numbers.Length; i++)
 {
-    if (nome == guests[i])
+    if (numbers[i] % 2 != 0)
     {
-        invitato = true;
+        sum += numbers[i];
     }
 }
+Console.WriteLine("La somma dei numeri dispari è: " + sum);
 
-if (invitato == true)
-{
-    Console.WriteLine("Sei ammesso alla festa!");
-}
-else
-{
-    Console.WriteLine("Non sei ammesso alla festa!");
-}
